@@ -1,2 +1,2 @@
-print "Hello form innner Script":wq
+print "Hello form innner Script"
 
