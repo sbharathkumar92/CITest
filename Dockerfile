@@ -1,4 +1,5 @@
 FROM python:2.7-slim
-WORKDIR .
-RUN python ./outerpython.py
-CMD python ./inner/innnerscript.py
+WORKDIR ${HOME}
+ADD . ${HOME}
+RUN python outerpython.py
+CMD python inner/innnerscript.py
