@@ -1,24 +1,17 @@
-pipeline
+stage('Build Unit Tests')
 {
-    agent any
-    stages
-    {
-	stage('Build Unit Tests')
+	node('build')
         {
-	    agent {node {label 'build'}}
-            steps
-            {
                 echo 'Building'
-                sh 'docker build -t uutbuilds .'
-            }
+                sh 'docker build -t uutbuilds .
         }
-        stage('Run Unit Tests')
+}
+stage('Run Unit Tests')
+{
         {
-            steps
-            {
-                echo 'Testing'
-		sh 'docker run uutbuilds'
-            }
+        	echo 'Testing'
+                sh 'docker run uutbuilds'
         }
-    }
-}    
+}
+    
+
