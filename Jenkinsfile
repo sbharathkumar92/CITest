@@ -5,7 +5,7 @@ pipeline
     {
 	stage('Build Unit Tests')
         {
-	    agent {node {label 'Build'}}
+	    agent {node {label 'build'}}
             steps
             {
                 echo 'Building'
