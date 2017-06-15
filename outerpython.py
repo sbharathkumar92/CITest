@@ -1,2 +1,2 @@
-import os,sys
+import sys
 print "Hello from outer script"
