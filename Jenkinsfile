@@ -5,7 +5,7 @@ stage('Build Unit Tests')
 		echo 'Building'
 		sh 'sleep 6'
                 sh 'docker build -t uutbuilds .'
-        }}
+        }},
 	test: { node('test'):
 	{
 		echo 'Building something else'
