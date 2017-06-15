@@ -3,9 +3,9 @@ pipeline
     agent any
     stages
     {
-        agent {node {label 'Build'}}
 	stage('Build Unit Tests')
         {
+	    agent {node {label 'Build'}}
             steps
             {
                 echo 'Building'
