@@ -3,7 +3,7 @@ stage('Build Unit Tests')
 	node('build')
         {
                 echo 'Building'
-                sh 'docker build -t uutbuilds .
+                sh 'docker build -t uutbuilds .'
         }
 }
 stage('Run Unit Tests')
