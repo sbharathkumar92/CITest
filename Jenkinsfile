@@ -8,7 +8,7 @@ stage('Build Unit Tests')
 }
 stage('Run Unit Tests')
 {
-        node
+        node('test')
 	{
         	echo 'Testing'
         	sh 'docker run uutbuilds'
