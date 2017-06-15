@@ -8,10 +8,10 @@ stage('Build Unit Tests')
 }
 stage('Run Unit Tests')
 {
-        {
-        	echo 'Testing'
-                sh 'docker run uutbuilds'
-        }
+        
+        echo 'Testing'
+        sh 'docker run uutbuilds'
+        
 }
     
 
