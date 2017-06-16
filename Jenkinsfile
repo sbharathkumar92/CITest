@@ -5,6 +5,7 @@ stage('Build Unit Tests')
 		node('build')
         	{
 			checkout scm
+			// Enable Clean after checkout under advanced options
 			echo 'Building'
 			sh 'sleep 6'
                 	sh 'docker build -t uutbuilds .'
