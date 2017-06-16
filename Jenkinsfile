@@ -1,10 +1,10 @@
 stage('Build Unit Tests')
 {
-	checkout scm
 	parallel build:
 	{ 
 		node('build')
         	{
+			checkout scm
 			echo 'Building'
 			sh 'sleep 6'
                 	sh 'docker build -t uutbuilds .'
