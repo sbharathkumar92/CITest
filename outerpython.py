@@ -1,2 +1,2 @@
-import os,sys
+#import os,sys
 print "Hello from outer script update"
