@@ -1,5 +1,6 @@
 stage('Build Unit Tests')
 {
+	checkout scm
 	parallel build:
 	{ 
 		node('build')
