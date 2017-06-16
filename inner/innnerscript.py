@@ -1,2 +1,2 @@
-print "Hello form innner Script"
+print "Hello form innner Script update"
 
